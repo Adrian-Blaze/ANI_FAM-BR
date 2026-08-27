@@ -12,8 +12,8 @@ import json
 
 load_dotenv()
 URL = os.getenv('URL').strip()
-t = date.today()
-#t = date(2024, 4, 18)
+#t = date.today()
+t = date(2024, 4, 18)
 df = pd.read_excel(URL)
 #print(df)
 
