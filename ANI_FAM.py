@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import json
 
 load_dotenv()
-URL = os.getenv('URL').strip()
+#URL = os.getenv('URL').strip()
 #t = date.today()
 t = date(2024, 4, 18)
 df = pd.read_excel('https://docs.google.com/spreadsheets/d/1czZ0nVBAVk_nX30wFo4/export?format=xlsx')
