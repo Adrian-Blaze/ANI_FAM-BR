@@ -14,7 +14,7 @@ load_dotenv()
 #URL = os.getenv('URL').strip()
 #t = date.today()
 t = date(2024, 4, 18)
-df = pd.read_excel('https://docs.google.com/spreadsheets/d/1czZ0nVBAVk_nX30wFo4/export?format=xlsx')
+df = pd.read_excel('https://docs.google.com/spreadsheets/d/1czZ0nVBAVkwd1_nX30w3545FcifXZFo4/export?format=xlsx')
 #print(df)
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
