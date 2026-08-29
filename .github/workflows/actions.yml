@@ -31,7 +31,13 @@ jobs:
           Email_Address: ${{ secrets.EMAIL_ADDRESS }}
           URL: ${{ secrets.url }}
           recipient: ${{ secrets.recipient }}
-        run: python ANI_FAM.py
+          CREDENTIALS: ${{ secrets.CREDENTIALS }}
+          TOKEN: ${{ secrets.TOKEN }}
+
+        run: |
+            printf '%s' "$CREDENTIALS" > credentials.json
+            printf '%s' "$TOKEN" > token.json
+            python ANI_FAM.py
           
  
       - name: commit log update
