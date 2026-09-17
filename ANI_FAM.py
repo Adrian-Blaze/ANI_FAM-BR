@@ -12,8 +12,8 @@ import json
 
 load_dotenv()
 #URL = os.getenv('URL').strip()
-#t = date.today()
-t = date(2024, 4, 18)
+t = date.today()
+#t = date(2024, 4, 18)
 df = pd.read_excel('https://docs.google.com/spreadsheets/d/1czZ0nVBAVkwd1_nX30w3545FcifXZFo4/export?format=xlsx')
 #print(df)
 
